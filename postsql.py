@@ -18,10 +18,10 @@ def import_geojson_to_postgis(geojson_file, db_name, user, password, host='local
         print(f'Successfully imported {geojson_file} to PostGIS table {table_name}')
     except subprocess.CalledProcessError as e:
         print(f'Error occurred: {e}')
-geojson_file = r'/home/chang/var/startsbucks.geojson'
-db_name = 'postgres'
-user = 'postgres'
-password = '8023cc'
+geojson_file = "file_path"
+db_name = 'db_name'
+user = 'user'
+password = 'your password'
 host = 'localhost'
-table_name = 'startsbucks_data'
+table_name = 'which table'
 import_geojson_to_postgis(geojson_file, db_name, user, password, host, table_name)
